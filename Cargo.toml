@@ -3,12 +3,12 @@ name = "zonefile-crds"
 description = "Rust library exposing the Zonefile CRDs as types."
 keywords = ["kubernetes", "kubizone", "crd", "zonefile"]
 repository = "https://github.com/kubi-zone/zonefile-crds"
-version = "0.3.0"
+version = "0.4.0"
 edition = "2021"
 license = "MIT"
 
 [dependencies]
-kubizone-crds = "0.10"
+kubizone-crds = "0.11"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 schemars = "0.8"
