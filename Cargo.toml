@@ -8,11 +8,16 @@ edition = "2021"
 license = "MIT"
 
 [dependencies]
-kubizone-crds = "0.5"
+kubizone-crds = "0.10"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 schemars = "0.8"
-kube = { version = "0.88", default-features = false, features = ["derive", "rustls-tls", "client", "runtime"] }
+kube = { version = "0.90", default-features = false, features = [
+    "derive",
+    "rustls-tls",
+    "client",
+    "runtime",
+] }
 k8s-openapi = { version = "0.21", features = ["v1_29"] }
 
 [dev-dependencies]
